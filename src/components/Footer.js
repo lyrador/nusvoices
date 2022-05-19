@@ -25,7 +25,7 @@ function Footer() {
                     <Button buttonStyle='btn--outline'>Subscribe</Button>
                 </form>
             </div> */}
-            <a target="_blank" href='https://t.me/+IdkuFpRTSuVmMWM1'>
+            <a target="_blank" rel="noopener noreferrer" href='https://t.me/+IdkuFpRTSuVmMWM1'>
                 <Button buttonStyle='btn--outline'>SUBSCRIBE</Button>
             </a>
         </section>
@@ -40,13 +40,13 @@ function Footer() {
                 </div>
                 <div className='footer-link-items'>
                     <h2>Follow</h2>
-                    <a target="_blank" href='https://www.instagram.com/nusvoices'>Instagram
+                    <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/nusvoices'>Instagram
                     </a>
                     {/* <img src='images/youtube-logo-png-46031.png' /> */}
-                    <a target="_blank" href='https://www.facebook.com/nusvoices'>Facebook</a>
-                    <a target="_blank" href='https://www.youtube.com/c/NUSVoices'>Youtube</a>
-                    <a target="_blank" href='https://www.tiktok.com/@nusvoices'>TikTok</a>
-                    <a target="_blank" href='https://linktr.ee/nuscacvoices'>Linktree</a>
+                    <a target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/nusvoices'>Facebook</a>
+                    <a target="_blank" rel="noopener noreferrer" href='https://www.youtube.com/c/NUSVoices'>Youtube</a>
+                    <a target="_blank" rel="noopener noreferrer" href='https://www.tiktok.com/@nusvoices'>TikTok</a>
+                    <a target="_blank" rel="noopener noreferrer" href='https://linktr.ee/nuscacvoices'>Linktree</a>
                 </div>
             </div>
             <div className='footer-link-wrapper'>

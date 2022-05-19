@@ -1,8 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
 import './AboutSection.css';
-import { Link } from 'react-router-dom';
 
 function AboutSection() {
   return (     
