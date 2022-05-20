@@ -1,8 +1,11 @@
 import React from 'react';
 import '../../App.css';
+import Slider from '../Slider/Slider';
 
 function Media() {
-    return <h1 className='about'>MEDIA</h1>
+    return <>
+        <Slider/>
+    </>
 }
 
 export default Media;

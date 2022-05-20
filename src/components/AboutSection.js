@@ -1,14 +1,15 @@
 import React from 'react';
 import '../App.css';
 import './AboutSection.css';
+import Slider from './Slider/Slider';
 
 function AboutSection() {
   return (     
     <div>
-        <section className='hero-container-2'>
-            <img src='images/750_0507.jpg'></img>
-            {/* <img></img> */}
-        </section>
+        {/* <section className='hero-container-2'> */}
+            {/* <img src='images/750_0507.jpg'></img> */}
+            <Slider></Slider>
+        {/* </section> */}
         <section className='hero-container-3'>
             <h1>PLAY. SING. LOVE.</h1>
             <br></br>
