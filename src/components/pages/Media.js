@@ -1,10 +1,10 @@
 import React from 'react';
 import '../../App.css';
-import Slider from '../Slider/Slider';
+import InstaFour from '../InstaFour';
 
 function Media() {
     return <>
-        <Slider/>
+        <InstaFour></InstaFour> 
     </>
 }
 
