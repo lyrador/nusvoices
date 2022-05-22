@@ -7,11 +7,23 @@ export default function InstaFour() {
   const [profileData, setProfileData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://v1.nocodeapi.com/chevalierdx7/instagram/WLnFuhNpyndzgSWg")
+      .get("https://v1.nocodeapi.com/chevalierdx7/instagram/CvkPBNsMBmmqKycH?limit=99")
       .then(result => {
         setProfileData(result.data.data);
       });
-  }, []);
+  }, [])
+
+  useEffect(() => {
+    setTimeout(
+      () =>
+          document.getElementById("toberemoved").remove()
+        ,
+      4000
+    );
+    return () => {};
+  })
+
+  ;
 
   return (
     <div>  
@@ -48,15 +60,25 @@ export default function InstaFour() {
             <div className="gallery-flex-container">
               {profileData.map((item, key) => (
                 <div className="gallery-flex-item" tabIndex={key}>
-                  <img src={item.media_url} className="gallery-image" alt="" />
+                  <img src={item.thumbnail_url || item.media_url} className="gallery-image" alt=""/>
                   {/* <div className="gallery-item-info">{item.caption}</div> */}
                 </div>
               ))}
             </div>
             </div>
             {/* End of gallery */}
-        {/* <div className="loader" /> */}
+        <div id="toberemoved" className="loader" />
         {/* End of container */}
+      </div>
+      <div className='ig-footer-container'>
+        <section className="ig-footer-subscription">  
+            <p className='ig-footer-subscription-heading'>
+                Follow our Instagram @nusvoices For More!
+            </p>
+            <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/nusvoices'>
+              <img src="images/Square-Instagram-Logo.png" alt=""/>
+            </a>
+        </section>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ function Footer() {
     <div className='footer-container'>
         <section className="footer-subscription">  
             <p className='footer-subscription-heading'>
-                Subscribe to our telegram channel to receive audition. concert updates and more!
+                Subscribe to our telegram channel to receive audition, concert updates and more!
             </p>
             {/* <p className='footer-subscription-text'>
                 You can unsubscribe at any time.
@@ -26,7 +26,9 @@ function Footer() {
                 </form>
             </div> */}
             <a target="_blank" rel="noopener noreferrer" href='https://t.me/+IdkuFpRTSuVmMWM1'>
-                <Button buttonStyle='btn--outline'>SUBSCRIBE</Button>
+                <Button buttonStyle='btn--outline--tele'>SUBSCRIBE 
+                    {/* <img src="images/986956_telegram_icon.png" alt=""/> */}
+                </Button>
             </a>
         </section>
         <div className="footer-links">

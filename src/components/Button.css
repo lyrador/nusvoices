@@ -24,6 +24,22 @@
     transition: all 0.3s ease-out;
 }
 
+.btn--outline--tele {
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+}
+
+/* .btn--outline--tele img {
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    line-height: normal;
+} */
+
+
 .btn--outline--blue {
     background-color: rgb(0, 149, 256);
     color: #fff;
