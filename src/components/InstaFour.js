@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Button } from './Button'
 import "./InstaFour.css";
 
 export default function InstaFour() {
@@ -13,53 +14,50 @@ export default function InstaFour() {
   }, []);
 
   return (
-    <div>
-      <header>
+    <div>  
+      <div className="ig4-main-container">
         <div className="ig4-container">
-          {/* <div className="profile">
-            <div className="profile-image">
-              <img
-                src="https://avatars2.githubusercontent.com/u/9165019?v=4"
-                alt=""
-                width="120px"
-              />
+            <div className="profile">
+                <div className="profile-image">
+                <img
+                    src="./Images/channelLogo.png"
+                    alt=""
+                    width="140px"
+                />
+                </div>
+                <div className="profile-user-settings">
+                <h1 className="profile-user-name">NUS CAC Voices</h1>
+                <button
+                    className="ig4-btn profile-settings-btn"
+                    aria-label="profile settings"
+                >
+                    <i className="fas fa-cog" aria-hidden="true" />
+                </button>
+                </div>
+                <div className="profile-bio">
+                <p>
+                    <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/nusvoices'>
+                        <Button buttonStyle='btn--outline--blue'>Follow</Button>
+                    </a>
+                </p>
+                </div>
             </div>
-            <div className="profile-user-settings">
-              <h1 className="profile-user-name">Mohd Danish</h1>
-              <button
-                className="ig4-btn profile-settings-btn"
-                aria-label="profile settings"
-              >
-                <i className="fas fa-cog" aria-hidden="true" />
-              </button>
+            {/* End of profile section */}
             </div>
-            <div className="profile-bio">
-              <p>
-                <span className="profile-real-name">Mohd Danish</span> Lorem
-                ipsum dolor sit, amet consectetur adipisicing elit 📷✈️🏕️
-              </p>
+            <div className="ig4-container-2">
+            <div className="gallery-flex-container">
+              {profileData.map((item, key) => (
+                <div className="gallery-flex-item" tabIndex={key}>
+                  <img src={item.media_url} className="gallery-image" alt="" />
+                  {/* <div className="gallery-item-info">{item.caption}</div> */}
+                </div>
+              ))}
             </div>
-          </div> */}
-          {/* End of profile section */}
-        </div>
-        
-        {/* End of containers */}
-      </header>
-      <main>
-        <div className="ig4-container">
-          <div className="gallery">
-            {profileData.map((item, key) => (
-              <div className="gallery-item" tabIndex={key}>
-                <img src={item.media_url} className="gallery-image" alt="" />
-                <div className="gallery-item-info">{item.caption}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-        {/* End of gallery */}
-        <div className="loader" />
+            </div>
+            {/* End of gallery */}
+        {/* <div className="loader" /> */}
         {/* End of container */}
-      </main>
+      </div>
     </div>
   );
 }

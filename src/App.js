@@ -9,10 +9,17 @@ import Services from './components/pages/Services';
 import SignUp from './components/pages/SignUp';
 import Media from './components/pages/Media';
 import Trailer from './components/Trailer';
+import Helmet from 'react-helmet';
 
 function App() {
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>NUS CAC Voices</title>
+        <link rel="canonical" href="https://nusvoices.com" />
+        <meta name="description" content="NUS CAC Voices, Premier Mandopop Group, SG" />
+    </Helmet>
       <Router>
           <Navbar></Navbar>
           <Routes>
