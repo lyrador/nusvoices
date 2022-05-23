@@ -38,6 +38,7 @@ function Footer() {
                     <Link to ='/'>Home</Link>
                     <Link to ='services'>Services</Link>
                     <Link to ='media'>Media</Link>
+                    <Link to ='faq'>FAQ</Link>
                     <Link to ='about'>About Us</Link>
                 </div>
                 <div className='footer-link-items'>

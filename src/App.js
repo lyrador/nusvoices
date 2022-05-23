@@ -7,6 +7,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Services from './components/pages/Services';
 import SignUp from './components/pages/SignUp';
+import Faq from './components/pages/Faq';
 import Media from './components/pages/Media';
 import Trailer from './components/Trailer';
 import Helmet from 'react-helmet';
@@ -27,6 +28,7 @@ function App() {
             <Route path = "/about" element={<About />} />
             <Route path = "/services" element={<Services />} />
             <Route path = "/media" element={<Media />} />
+            <Route path = "/faq" element={<Faq />} />
             <Route path = "/sign-up" element={<SignUp />} />
             <Route path = "/trailer" element={<Trailer />} />
           </Routes>

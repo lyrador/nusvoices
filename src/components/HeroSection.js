@@ -7,8 +7,9 @@ import { Link } from 'react-router-dom';
 function HeroSection() {
   return (
     <div className='hero-container'>
-        <video src='/videos/video-3.mp4' autoPlay loop muted playsInline/>
+        <video src='/videos/video-4.mp4' autoPlay loop muted playsInline/>
         <h1>HEAR IT. SEE IT. LIVE IT.</h1>
+        {/* <h2>NUS' Premier Mandopop Group</h2> */}
         <p>What are you waiting for?</p>
         <div className='hero-btns'>
             <Link to ='/about' className='btn-mobile'>
@@ -26,7 +27,7 @@ function HeroSection() {
                     buttonStyle='btn--primary'
                     buttonSize='btn--large'
                 >
-                    WATCH TRAILER <i className='far fa-play-circle'/>
+                    WATCH TEASER <i className='far fa-play-circle'/>
                 </Button>
             </Link>
         </div>

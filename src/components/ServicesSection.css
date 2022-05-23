@@ -1,0 +1,29 @@
+.services-main-container {
+    /* background-color: #34495e; */
+    height: 100vh;
+    padding-top: 80px;
+    background-image: url("../../public/images/background3.jpg");
+    background-position: center;
+    /* background-position: right bottom, left top; */
+    /* background-repeat: no-repeat, repeat; */
+}
+
+.services-main-container > h1 {
+    color: white;
+}
+
+.services-sub-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+
+ul {
+    padding-left: 1rem;
+}
+
+@media(max-width:767px) {
+    html {
+        font-size: 14px;
+    }
+}

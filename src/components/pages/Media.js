@@ -5,8 +5,8 @@ import InstaFour from '../InstaFour';
 
 function Media() {
     return <>
-        <InstaFour></InstaFour> 
-        <Footer></Footer>
+        <InstaFour/>
+        <Footer/>
     </>
 }
 
