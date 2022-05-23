@@ -27,7 +27,7 @@ function HeroSection() {
                     buttonStyle='btn--primary'
                     buttonSize='btn--large'
                 >
-                    WATCH TEASER <i className='far fa-play-circle'/>
+                    WATCH TEASER
                 </Button>
             </Link>
         </div>
