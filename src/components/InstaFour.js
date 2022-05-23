@@ -7,7 +7,7 @@ export default function InstaFour() {
   const [profileData, setProfileData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://v1.nocodeapi.com/chevalierdx7/instagram/CvkPBNsMBmmqKycH?limit=99")
+      .get("https://graph.instagram.com/me/media?fields=id,caption,media_url,thumbnail_url&limit=99&access_token=IGQVJYUjJCcUFVVVl3V2VDTlFNVXRXX3M3c090QjQzRHdiNWI2QXFhSXcxMjJUUmpWRnZA5eF9qaUFrZA1Rfck0xSE9RV3lBNUFLVXk1RmozOWZA6T0U3amU0LWFxNWhlc0U0N0lFT2tDWnFpT29WVUNrWQZDZD")
       .then(result => {
         setProfileData(result.data.data);
       });
