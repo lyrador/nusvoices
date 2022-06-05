@@ -22,7 +22,6 @@ export default function InstaFour() {
     );
     return () => {};
   })
-
   ;
 
   return (

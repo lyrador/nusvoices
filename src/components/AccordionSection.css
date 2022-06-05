@@ -20,10 +20,11 @@ h1 {
   /* background-color: #34495e; */
   height: 100vh;
   padding-top: 80px;
-  background-image: url("../../public/images/background1.jpg");
+  /* background-image: url("../../public/images/background1.jpg"); */
   background-position: center;
   /* background-position: right bottom, left top; */
-  /* background-repeat: no-repeat, repeat; */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .faq-main-container > h1 {

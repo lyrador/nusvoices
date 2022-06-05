@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import './Slider.css'
 import BtnSlider from './BtnSlider'
 import dataSlider from './dataSlider'
+import Image1 from '../../images/img1.jpg';
 
 export default function Slider() {
 
@@ -57,7 +58,7 @@ export default function Slider() {
             {dataSlider.map((obj, index) => {
                 return (
                     <div
-                    key={obj.id}
+                    // key={obj.id}
                     className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
                     >
                         <img 

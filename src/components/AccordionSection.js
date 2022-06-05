@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import './AccordionSection.css';
+import BackgroundImage1 from '../images/background1.jpg';
 
 export default class AccordionSection extends Component {
 
@@ -32,7 +33,7 @@ export default class AccordionSection extends Component {
   }
   render(){
     return (
-        <div className='faq-main-container'>
+        <div className='faq-main-container' style={{ backgroundImage: `url(${BackgroundImage1})`}}>
         
         <h1>FAQ</h1>
         <div className="accordion">
@@ -44,7 +45,7 @@ export default class AccordionSection extends Component {
             <div className="accordion-item-body-content">
                 Shortly after auditions, all new members will be hosted at our Voices Welcome Session (VWS), an exciting orientation camp for everyone
                 to get to know each other better. Following which, 
-                preparations will start for our PRELUDE concert near the end of the first semester, and we will end of with our EMERGE concert in the second. 
+                preparations will start for our PRELUDE concert near the end of the first semester, and we will end off with our EMERGE concert in the second. 
                 Apart from these key events, we may also open up participation to gigs and other concerts, depending on the current regulations and availability.
             </div>
             </div>
@@ -65,7 +66,7 @@ export default class AccordionSection extends Component {
             </div>
             <div className="accordion-item-body">
             <div className="accordion-item-body-content">
-            Yeap you can still apply! As long as you can play/ sing well enough and show your passionate, you still have a high chance of passing the auditions :)
+            Yeap you can still apply! As long as you can play/ sing well enough and show that you're passionate, you still have a high chance of passing the auditions :)
 
             Many of our vocalists don’t really have background in singing - no vocal training or band/competition experience. So don’t worry too much! If you never try, you’ll never know xD.
             </div>
