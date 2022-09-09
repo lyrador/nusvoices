@@ -7,7 +7,7 @@ export default function InstaFour() {
   const [profileData, setProfileData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://graph.instagram.com/me/media?fields=id,caption,media_url,thumbnail_url&limit=99&access_token=IGQVJYUjJCcUFVVVl3V2VDTlFNVXRXX3M3c090QjQzRHdiNWI2QXFhSXcxMjJUUmpWRnZA5eF9qaUFrZA1Rfck0xSE9RV3lBNUFLVXk1RmozOWZA6T0U3amU0LWFxNWhlc0U0N0lFT2tDWnFpT29WVUNrWQZDZD")
+      .get("https://graph.instagram.com/me/media?fields=id,caption,media_url,thumbnail_url&limit=99&access_token=IGQVJWSXc4R2xrSFNDcEVvSHZASZAWlGX3JySkNScHR1T3J3bElmOXRQdUtUeDZAJQTJySWtrWGlXeEdyeV9mS1djTi1VNjgzbnB5TXJvTlNuWEU1aUVOMnZAzdUVpRDduS2lZASm1ldUc0MF9WUW42YnJoaQZDZD")
       .then(result => {
         setProfileData(result.data.data);
       });
