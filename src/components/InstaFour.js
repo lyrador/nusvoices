@@ -11,7 +11,7 @@ export default function InstaFour() {
       () =>
         document.getElementById("toberemoved").remove()
       ,
-      4000
+      1000
     );
     return () => { };
   })
